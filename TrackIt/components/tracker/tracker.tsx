@@ -1,20 +1,29 @@
 import './tracker.css';
-
-const habits = {
-    Reading : ["Read for 5 minutes", "Read for 10 minutes"],
-    Coding: ["Coded for 6 minutes"]
-}
+import {habits} from './trackerData';
 
 const Tracker = () => {
   return (
     <>
-        <div className="tracker_wrapper">
-            <h2 className="tracker_header">Reading</h2>
-            <ul className="tracker_list">
-                {habits.Reading.map((read, index) => (
-                    <li className="tracker_list-text" key={index}>{read}</li>
-                ))}
-            </ul>
+        <h1 className="tracker_title">Track-It</h1>
+        <div className="tracker_container">
+            {Object.entries(habits).map(([array, value]) => (
+                <>
+                    <div key={array} className="tracker_div">
+                        <h2 className="tracker_header">{array}</h2>
+                        <div key={array} className="tracker_entries">
+                            {value.length === 0 ? (
+                                <p className="tracker_none">No Data Available</p>
+                            ) : ( 
+                                value.map((entry) => (
+                                <span className="tracker_entry-span">
+                                    <span className="material-symbols-outlined tracker_entry-icon">radio_button_checked</span>
+                                    <p key={entry} className="tracker_entry">{entry}</p>
+                                </span>
+                            )))}
+                        </div>
+                    </div>
+                </>
+            ))}
         </div>
     </>
   )

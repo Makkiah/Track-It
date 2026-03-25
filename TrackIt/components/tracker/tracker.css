@@ -1,12 +1,78 @@
 
-.tracker_wrapper{
+.tracker_title{
+    font-size: 32px;
+    text-align: center;
+    margin: 40px auto 20px;
+}
+.tracker_wrap{
     border: 1px solid black;
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    gap: 40px 20px;
+    padding: 40px 0;
 }
-.tracker_header{}
-.tracker_list{}
-.tracker_list-text{}
+.tracker_container{
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    gap: 40px 20px;
+    padding: 40px 0;
+}
+.tracker_div{
+    height: auto;
+    width: 30%;
+    min-width: 350px;
+    padding: 12px 15px;
+    border: 1px solid grey;
+    min-height: 200px;
+
+}
+@media screen and (max-width: 1099px){
+    .tracker_div{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 739px){
+    .tracker_div{
+        width: 90%;
+    }
+}
+.tracker_header{
+    font-size: 24px;
+    text-align: center;
+}
+.tracker_entries{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 12px;
+    padding-top: 12px;
+}
+.tracker_none{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+}
+.tracker_entry-span{
+    display: flex;
+}
+.tracker_entry{
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    width: fit-content;
+}
+.tracker_entry-icon{
+    font-size: 16px;
+    margin-right: 4px;
+}
