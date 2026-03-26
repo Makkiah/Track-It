@@ -1,6 +1,6 @@
 import './tracker.css';
 import {habits} from './trackerData';
-import city from './../../src/assets/city.png';
+import people from './../../src/assets/people.png';
 import radio from './../../src/assets/radio.svg';
 import note from './../../src/assets/notes.svg';
 
@@ -12,7 +12,7 @@ const Tracker = () => {
             <img className="tracker_icon-note" src={note} alt="Note icon" width={64} height={64} />
             <h1 className="tracker_title">Track-It</h1>
         </div>
-        <div className="tracker_container" style={{backgroundImage: `url(${city})`}}>
+        <div className="tracker_container" style={{backgroundImage: `url(${people})`}}>
             {Object.entries(habits).map(([array, value]) => (
                 <>
                     <div key={array} className="tracker_div">
