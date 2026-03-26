@@ -1,12 +1,22 @@
-
-.tracker_title{
-    font-size: 32px;
-    text-align: center;
+.tracker_div-top{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-self: center;
     margin: 40px auto 20px;
+    width: fit-content;
+}
+.tracker_title{
+    font-size: 60px;
+    text-align: center;
+
+}
+.tracker_icon-note{
+    margin-right: 4px;
 }
 .tracker_wrap{
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -17,8 +27,7 @@
     padding: 40px 0;
 }
 .tracker_container{
-    border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -30,15 +39,28 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 1px 20px 0 #000;
 }
 .tracker_div{
     height: auto;
     width: 30%;
     min-width: 350px;
+    border-radius: 12px;
     padding: 12px 15px;
-    border: 1px solid grey;
     min-height: 200px;
-
+    background-color: rgba(255, 243, 243, 0.106);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari */
+    box-shadow: 0 1px 4px 0 #000;
+    transition: all .4s ease;
+}
+.tracker_div:hover{
+    background-color: rgba(255, 255, 255, 0.568);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); /* Safari */
+    box-shadow: 0 1px 16px 0 #000;
+    transition: all .4s ease;
+    cursor: pointer;
 }
 @media screen and (max-width: 1099px){
     .tracker_div{
@@ -51,8 +73,9 @@
     }
 }
 .tracker_header{
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
+    text-decoration: underline;
 }
 .tracker_entries{
     display: flex;
@@ -61,7 +84,7 @@
     padding-top: 12px;
 }
 .tracker_none{
-    font-size: 18px;
+    font-size: 22px;
     font-family: sans-serif;
     text-align: center;
     width: 100%;
@@ -70,12 +93,13 @@
     display: flex;
 }
 .tracker_entry{
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
     font-family: 'Times New Roman', Times, serif;
     width: fit-content;
 }
-.tracker_entry-icon{
-    font-size: 16px;
+.tracker_icon-entry{
+    width: 20px;
+    height: 20px;
     margin-right: 4px;
 }
