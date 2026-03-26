@@ -1,11 +1,12 @@
 import './tracker.css';
 import {habits} from './trackerData';
+import city from './../../src/assets/city.png';
 
 const Tracker = () => {
   return (
     <>
         <h1 className="tracker_title">Track-It</h1>
-        <div className="tracker_container">
+        <div className="tracker_container" style={{backgroundImage: `url(${city})`}}>
             {Object.entries(habits).map(([array, value]) => (
                 <>
                     <div key={array} className="tracker_div">
