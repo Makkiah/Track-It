@@ -1,7 +1,9 @@
 import './tracker.css';
 import {habits} from './trackerData';
 import city from './../../src/assets/city.png';
-import radio from './../../src/assets/radio.svg';
+import radioDone from './../../src/assets/radio-done.svg';
+// import radioHalf from './../../src/assets/radio-half.svg';
+import radio from './../../src/assets/radio-none.svg';
 import note from './../../src/assets/notes.svg';
 
 
@@ -23,7 +25,10 @@ const Tracker = () => {
                             ) : ( 
                                 value.map((entry) => (
                                 <span className="tracker_entry-span">
-                                    <img className="tracker_icon-entry" src={radio} alt="Entry icon" width={24} height={24} />
+                                    {array !== "To-Do" ? 
+                                        <img className="tracker_icon-entry" src={radioDone} alt="Entry icon" width={24} height={24} /> 
+                                        : <img className="tracker_icon-entry" src={radio} alt="Entry icon" width={24} height={24} />
+                                    }
                                     <p key={entry} className="tracker_entry">{entry}</p>
                                 </span>
                             )))}
