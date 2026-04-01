@@ -50,7 +50,7 @@
     min-height: 200px;
     background-color: rgba(255, 243, 243, 0.106);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari */
+    -webkit-backdrop-filter: blur(10px); /* Safari */ 
     box-shadow: 0 1px 4px 0 #000;
     transition: all .4s ease;
 }
