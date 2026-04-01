@@ -1,6 +1,8 @@
 import './tracker.css';
+import {useState, useEffect} from 'react';
 import {habits} from './trackerData';
 import city from './../../src/assets/city.png';
+import cityGif from './../../src/assets/city.gif';
 import radioDone from './../../src/assets/radio-done.svg';
 // import radioHalf from './../../src/assets/radio-half.svg';
 import radio from './../../src/assets/radio-none.svg';
@@ -8,13 +10,25 @@ import note from './../../src/assets/notes.svg';
 
 
 const Tracker = () => {
-  return (
+
+    const [bg, setBg] = useState(city);
+
+    useEffect(() => {
+        const img = new Image();
+
+        img.src = cityGif;
+
+        img.onload = () => setBg(cityGif);
+        img.onerror = () => setBg(city);
+    });
+
+    return (
     <>
         <div className='tracker_div-top'>
             <img className="tracker_icon-note" src={note} alt="Note icon" width={64} height={64} />
             <h1 className="tracker_title">Track-It</h1>
         </div>
-        <div className="tracker_container" style={{backgroundImage: `url(${city})`}}>
+        <div className="tracker_container" style={{backgroundImage: `url(${bg})`}}>
             {Object.entries(habits).map(([array, value]) => (
                 <>
                     <div key={array} className="tracker_div">
