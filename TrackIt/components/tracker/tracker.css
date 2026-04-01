@@ -49,15 +49,15 @@
     padding: 12px 15px;
     min-height: 200px;
     background-color: rgba(255, 243, 243, 0.106);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Safari */ 
+    backdrop-filter: blur(10px);
     box-shadow: 0 1px 4px 0 #000;
     transition: all .4s ease;
 }
 .tracker_div:hover{
     background-color: rgba(255, 255, 255, 0.568);
-    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px); /* Safari */
+    backdrop-filter: blur(16px);
     box-shadow: 0 1px 16px 0 #000;
     transition: all .4s ease;
     cursor: pointer;
