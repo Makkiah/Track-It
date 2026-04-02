@@ -6,6 +6,7 @@ export const habits = {
     Gym: [],
     Japanese: [],
     Life: ["Got two pair of new glasses", "Got some eye contacts", "Started an AI Coding Bootcamp", "Finished Blood Meridian", "Got some Doc Martin boots", "Started a relationship with Pancake (my best friend)"],
+    Week: ["4/1-4/2: Web Dev & Work, 4/3: Household Chores, 4/4-4/5: Music"],
     "To-Do": [ "Day 1 of homework", "Day 2 of homework", "Day 3 Learning", "Seperate the 'To-Do' area and create a seperate area for 'What you've learned today'", "Setup Supabase backend for Signature Moment", "Finish book 'Melanin: The Chemical To Black Greatness'", "Add this project to Makkiah.com", "Add 'yearly goals' area at the top that never changes" ]
 }
 
