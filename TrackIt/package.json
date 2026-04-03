@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "VITE_BUILD_TIME=$(date -u +%Y-%m-%dT%H:%M:%SZ) tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

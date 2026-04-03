@@ -12,6 +12,9 @@ import note from './../../src/assets/notes.svg';
 const Tracker = () => {
 
     const [bg, setBg] = useState(city);
+    
+    const lastUpdatedDate = "04/03/2026";
+    const lastUpdatedTime = "2:29pm";
 
     useEffect(() => {
         const img = new Image();
@@ -20,13 +23,28 @@ const Tracker = () => {
 
         img.onload = () => setBg(cityGif);
         img.onerror = () => setBg(city);
+
     });
+
 
     return (
     <>
         <div className='tracker_div-top'>
             <img className="tracker_icon-note" src={note} alt="Note icon" width={64} height={64} />
             <h1 className="tracker_title">Track-It</h1>
+            <div className="tracker_last-updated">
+                <h4 className='tracker_last-updated-head'>Last updated:</h4>
+                <div className="tracker_last-updated-div">
+                    <div className="tracker_last-updated-div-div">
+                        <h5 className='tracker_last-updated-text_label'>Date: </h5>
+                        <p className='tracker_last-updated-text'>{lastUpdatedDate ? lastUpdatedDate : "Unknown"}</p>
+                    </div>
+                    <div className="tracker_last-updated-div-div">
+                        <h5 className='tracker_last-updated-text_label'>Time: </h5>
+                        <p className='tracker_last-updated-text'>{lastUpdatedTime ? lastUpdatedTime : "Unknown"}</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="tracker_container" style={{backgroundImage: `url(${bg})`}}>
             {Object.entries(habits).map(([array, value]) => (
