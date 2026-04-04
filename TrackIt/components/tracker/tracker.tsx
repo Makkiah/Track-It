@@ -13,9 +13,8 @@ const Tracker = () => {
 
     const [bg, setBg] = useState(city);
     
-    const lastUpdatedDate = "04/03/2026";
-    const lastUpdatedTime = "2:47pm";
-
+    const lastUpdatedDate = "04/04/2026";
+    const lastUpdatedTime = "4:24am";
     useEffect(() => {
         const img = new Image();
 
