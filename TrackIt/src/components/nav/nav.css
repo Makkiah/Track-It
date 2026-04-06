@@ -136,3 +136,12 @@ Link:hover{
     transition: all .3s ease;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 500px) {
+    .nav_container{flex-direction: column; margin-bottom: 0;}
+    .nav_slider{width: 100%; right: -100%;}
+    .nav_menu{align-self: flex-end; margin-top: 12px;}
+    .nav_title{font-size: 48px;}
+    .nav_icon-note{width: 56px; height: 56px;}
+    .nav_icon-history{width: 32px; height: 32px;}
+}

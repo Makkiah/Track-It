@@ -9,8 +9,8 @@ import { Outlet, Link } from "react-router-dom";
 
 const Nav = () => {
      
-    const lastUpdatedDate = "04/05/2026";
-    const lastUpdatedTime = "8:16pm";
+    const lastUpdatedDate = "04/06/2026";
+    const lastUpdatedTime = "12:59am";
     const [open, setOpen] = useState(false);
     
     return (
@@ -40,8 +40,8 @@ const Nav = () => {
                     <img className='nav_slider-close' onClick={() => setOpen(false)} src={close} alt="Close nav" width={36} height={36} />
                     <h2 className='nav_slider-header'>Main Menu</h2>
                     <ul className='nav_slider-list'>
-                        <li className='nav_slider-item'><Link to="/" className='nav_link'>Home</Link></li>
-                        <li className='nav_slider-item'><Link to="/history" className='nav_link'>History</Link></li>
+                        <li className='nav_slider-item' onClick={() => setOpen(false)}><Link to="/" className='nav_link'>Home</Link></li>
+                        <li className='nav_slider-item' onClick={() => setOpen(false)}><Link to="/history" className='nav_link'>History</Link></li>
                     </ul>
                 </div>
             </nav>
