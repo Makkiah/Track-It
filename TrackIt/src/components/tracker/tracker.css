@@ -1,32 +1,4 @@
-.tracker_div-top{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-self: center;
-    margin: 40px auto 20px;
-    width: fit-content;
-}
-.tracker_title{
-    font-size: 60px;
-    text-align: center;
 
-}
-.tracker_last-updated-text_label{
-   margin-right: 8px;
-}
-
-.tracker_last-updated-div{
-    display: flex;
-    flex-direction: column;
-}
-.tracker_last-updated-div-div{
-    display: flex;
-    align-items: center;
-}
-
-.tracker_icon-note{
-    margin-right: 4px;
-}
 .tracker_wrap{
     border: 1px solid black;
     border-radius: 12px;

@@ -1,11 +1,25 @@
 import './App.css';
-import Tracker from "../components/tracker/tracker"
+import Nav from "./components/nav/nav";
+import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import Home from './pages/Home';
+import History from './pages/History/HistoryFebMar';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Nav />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "history", element: <History /> },
+    ],
+  },
+]);
 
 function App() {
 
   return (
     <>
-      <Tracker/>
+      <RouterProvider router={router} />
     </>
   )
 }
