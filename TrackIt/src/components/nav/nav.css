@@ -84,7 +84,7 @@ Link:hover{
     backdrop-filter: blur(16px);
     box-shadow: 0 1px 16px 0 #000;
     right: calc(-0% - 500px);
-    height: calc(100vh + 40px);
+    height: calc(100% + 40px);
     z-index: 100;
     padding: 72px 20px 0px;
     visibility: hidden;
