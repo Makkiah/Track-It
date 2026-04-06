@@ -5,8 +5,15 @@ import cityGif from './../../assets/city.gif';
 import radioDone from './../../assets/radio-done.svg';
 import radio from './../../assets/radio-none.svg';
 
+type Habits = {
+  [key: string]: string[];
+};
 
-const Tracker = ({habits}) => {
+type TrackerProps = {
+  habits: Habits;
+};
+
+const Tracker = ({ habits }: TrackerProps) => {
 
     const [bg, setBg] = useState(city);
    
