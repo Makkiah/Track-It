@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import note from './../../assets/notes.svg';
 import history from './../../assets/history.svg';
 import close from './../../assets/close.svg';
@@ -10,8 +10,21 @@ import { Outlet, Link } from "react-router-dom";
 const Nav = () => {
      
     const lastUpdatedDate = "04/06/2026";
-    const lastUpdatedTime = "1:03am";
+    const lastUpdatedTime = "1:09am";
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        // cleanup (important)
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [open]);
     
     return (
         <>
