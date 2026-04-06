@@ -7,7 +7,7 @@ export const thisMonth = {
     Japanese: [],
     Life: ["Day 1 Homework"],
     Week: ["4/1-4/2: Web Dev & Work, 4/3: Household Chores, 4/4-4/5: Music"],
-    "To-Do": [ "Day 2 Homework", "Day 3 Learning", "Seperate the 'To-Do' area and create a seperate area for 'What you've learned today'", "Setup Supabase backend for Signature Moment", "Finish book 'Melanin: The Chemical To Black Greatness'", "Add this project to Makkiah.com", "Add 'yearly goals' area at the top that never changes" ]
+    "To-Do": [ "Day 2 Homework", "Day 3 Learning", "Checkout Make.com, Checklist.design, and webaim.org", "Update images to .webp over .png", "Setup Supabase backend for Signature Moment", "Finish book 'Melanin: The Chemical To Black Greatness'", "Add this project to Makkiah.com", "Add 'yearly goals' area at the top that never changes" ]
 }
 
 export const febMar = {
