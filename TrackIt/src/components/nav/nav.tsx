@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState } from 'react';
 import note from './../../assets/notes.svg';
 import history from './../../assets/history.svg';
 import close from './../../assets/close.svg';
@@ -11,19 +11,7 @@ const Nav = () => {
      
     const lastUpdatedDate = "04/05/2026";
     const lastUpdatedTime = "8:16pm";
-
-
-    useEffect(()=> {
-        document.getElementById("history-panel").style.right = "calc(0% - 500px)";
-    }, [])
-    const handleOpen = () => {
-        document.getElementById("history-panel").style.visibility = "visible";
-        document.getElementById("history-panel").style.right = "0%";
-    };
-    const handleClose = () => {
-        document.getElementById("history-panel").style.visibility = "hidden";
-        document.getElementById("history-panel").style.right = "calc(0% - 500px)";
-    };
+    const [open, setOpen] = useState(false);
     
     return (
         <>
@@ -46,14 +34,14 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className="nav_menu">
-                    <img className="nav_icon-history" id="history-btn" onClick={handleOpen} src={history} alt="History icon" width={36} height={36} />
+                    <img className="nav_icon-history" id="history-btn" onClick={() => setOpen(true)} src={history} alt="History icon" width={36} height={36} />
                 </div>
-                <div className="nav_slider" id="history-panel">
-                    <img className='nav_slider-close' onClick={handleClose} src={close} alt="Close nav" width={36} height={36} />
+                <div className={`nav_slider ${open ? "open" : ""}`} id="history-panel">
+                    <img className='nav_slider-close' onClick={() => setOpen(false)} src={close} alt="Close nav" width={36} height={36} />
                     <h2 className='nav_slider-header'>Main Menu</h2>
                     <ul className='nav_slider-list'>
-                        <Link to="/" className='nav_link'><li className='nav_slider-item'>Home</li></Link>
-                        <Link to="/history" className='nav_link'><li className='nav_slider-item'>History</li></Link>
+                        <li className='nav_slider-item'><Link to="/" className='nav_link'>Home</Link></li>
+                        <li className='nav_slider-item'><Link to="/history" className='nav_link'>History</Link></li>
                     </ul>
                 </div>
             </nav>
