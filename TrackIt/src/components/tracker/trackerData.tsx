@@ -1,8 +1,8 @@
 
 export const thisMonth = {
-    Reading : ["Read for 6 minutes (4/1) x 2", "Read coding docs (4/1)", "Read coding docs (4/3)"],
+    Reading : ["Read for 6 minutes (4/1) x 2", "Read coding docs (4/1)", "Read coding docs (4/3)", "Read book for 10 min"],
     Coding: ["Day 2 of learning / 60 Minutes of Coding", "Add a timestamp for 'last updated'", "Fixed bugs"], 
-    Music: [],
+    Music: ["Played at the Dallas 4/1", "Finished and submitted to the 'In Your Hood' open verse challange."],
     Gym: [],
     Japanese: [],
     Life: ["Day 1 Homework"],
