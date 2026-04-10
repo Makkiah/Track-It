@@ -5,7 +5,7 @@ export const thisMonth = {
     Music: ["Played at the Dallas - 4/1", "Finished and submitted to the 'In Your Hood' open verse challange.", "Visited Kafe K. on open mic night - 4/7", "Practiced guitar for 45 minutes (i iv i iv & i iv v iv) 4/9"],
     // Gym: [],
     // Japanese: [],
-    Life: ["Day 1 Homework"],
+    Life: ["Day 1 Homework", "Meditated for 10 min 4/8"],
     Week: ["4/1-4/2: Web Dev & Work, 4/3: Household Chores, 4/4-4/5: Music"], 
     "To-Do": [ "Day 2 Homework", "Day 3 Learning", "Checkout Make.com, Checklist.design, and webaim.org", "Update images to .webp over .png", "Setup Supabase backend for Signature Moment", "Finish book 'Melanin: The Chemical To Black Greatness'", "Add this project to Makkiah.com", "Add 'yearly goals' area at the top that never changes" ]
 }
