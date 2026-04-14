@@ -1,8 +1,8 @@
 
 export const thisMonth = {
-    Reading : ["Read for 6 minutes (4/1) x 2", "Read coding docs (4/1)", "Read coding docs (4/3)", "Read book for 10 min", "Read book for 20 min", "Read coding docs for 55 minutes 4/9", "Read coding docs for 20 min 4/10", "Read coding docs for 5x9 min 4/12"],
+    Reading : ["Read for 6 minutes (4/1) x 2", "Read coding docs (4/1)", "Read coding docs (4/3)", "Read book for 10 min", "Read book for 20 min", "Read coding docs for 55 minutes 4/9", "Read coding docs for 20 min 4/10", "Read coding docs for 45 min 4/12"],
     Coding: ["Day 2 of learning / 60 Minutes of Coding", "Add a timestamp for 'last updated'", "Fixed bugs"], 
-    Music: ["Played at the Dallas - 4/1", "Finished and submitted to the 'In Your Hood' open verse challange.", "Visited Kafe K. on open mic night - 4/7", "Practiced guitar for 45 minutes (i iv i iv & i iv v iv) 4/9", "Practiced guitar for 50 min 4/10", "Practiced guitar for an hour 4/11"],
+    Music: ["Played at the Dallas - 4/1", "Finished and submitted to the 'In Your Hood' open verse challange.", "Visited Kafe K. on open mic night - 4/7", "Practiced guitar for 45 minutes (i iv i iv & i iv v iv) 4/9", "Practiced guitar for 50 min 4/10", "Practiced guitar for an hour 4/11", "Recorded guitar at The Dallas 4/13", "Practiced guitar for 40 minutes 4/14", "Open mic at The Dallas and KK 4/14"],
     // Gym: [],
     // Japanese: [],
     Life: ["Day 1 Homework", "Meditated for 10 min 4/8", "Day 2 homework/reading"],
