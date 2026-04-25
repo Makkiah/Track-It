@@ -9,8 +9,8 @@ import { Outlet, Link } from "react-router-dom";
 
 const Nav = () => {
      
-    const lastUpdatedDate = "04/14/2026";
-    const lastUpdatedTime = "5:17pm";
+    const lastUpdatedDate = "04/25/2026";
+    const lastUpdatedTime = "4:42pm";
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
